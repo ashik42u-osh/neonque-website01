@@ -2,20 +2,25 @@
   "name": "neonque-frontend",
   "version": "1.0.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+
   "dependencies": {
     "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
+
   "devDependencies": {
-  "tailwindcss": "^3.4.0",
-  "typescript": "^5.0.0",
-  "@types/react": "^18.3.3",
-  "@types/node": "^20.17.6"
-      }
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.3.3",
+    "@types/node": "^20.17.6",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  }
 }
