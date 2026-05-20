@@ -1,30 +1,20 @@
-export default function HomePage() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <h1 className="text-5xl font-bold uppercase tracking-widest">
-          Engineering Motion.
+    <main className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold mb-6 text-cyan-400">
+          NEONQUE
         </h1>
 
-        <h2 className="mt-4 text-4xl text-cyan-400">
-          Fabricating The Future.
-        </h2>
-
-        <p className="mt-6 max-w-xl text-zinc-400">
+        <p className="text-xl text-gray-300 max-w-2xl">
           Futuristic automotive innovation, fabrication systems,
-          neon technologies and immersive engineering concepts.
+          immersive engineering concepts and neon technologies.
         </p>
 
-        <div className="mt-10 flex gap-4">
-          <button className="rounded-xl border border-cyan-400 px-6 py-3">
-            Explore Builds
-          </button>
-
-          <button className="rounded-xl bg-cyan-500 px-6 py-3 text-black">
-            Start Project
-          </button>
-        </div>
-      </section>
+        <button className="mt-8 px-8 py-4 bg-cyan-500 rounded-xl text-black font-bold hover:scale-105 transition">
+          Enter Future
+        </button>
+      </div>
     </main>
   );
 }
