@@ -1,185 +1,72 @@
-export default function HomePage() {
+export default function Home() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background:
-          "radial-gradient(circle at top, #111827 0%, #050816 45%, #020308 100%)",
-        color: "white",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      {/* HERO SECTION */}
-      <section
-        style={{
-          minHeight: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-          padding: "40px 20px",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        {/* Glow Background */}
-        <div
-          style={{
-            position: "absolute",
-            width: "600px",
-            height: "600px",
-            background:
-              "radial-gradient(circle, rgba(0,255,255,0.15), transparent 70%)",
-            filter: "blur(80px)",
-            top: "-150px",
-            zIndex: 0,
-          }}
-        />
+    <main className="relative min-h-screen overflow-hidden bg-[#050816] text-white">
 
-        {/* Badge */}
-        <div
-          style={{
-            border: "1px solid rgba(255,255,255,0.15)",
-            padding: "10px 18px",
-            borderRadius: "999px",
-            fontSize: "12px",
-            letterSpacing: "1px",
-            marginBottom: "24px",
-            background: "rgba(255,255,255,0.04)",
-            backdropFilter: "blur(12px)",
-            zIndex: 1,
-          }}
-        >
+      {/* Background Glow */}
+      <div className="absolute top-[-200px] left-[-100px] h-[500px] w-[500px] rounded-full bg-cyan-500/20 blur-3xl" />
+
+      <div className="absolute bottom-[-200px] right-[-100px] h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-3xl" />
+
+      {/* Grid Overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
+
+      {/* Hero Content */}
+      <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
+
+        <div className="mb-6 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-2 text-sm text-cyan-300 backdrop-blur-md">
           FUTURISTIC AUTOMOTIVE + FABRICATION
         </div>
 
-        {/* Main Heading */}
-        <h1
-          style={{
-            fontSize: "72px",
-            fontWeight: "bold",
-            maxWidth: "1000px",
-            lineHeight: "1",
-            marginBottom: "28px",
-            background:
-              "linear-gradient(to right, #ffffff, #7dd3fc, #22d3ee)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            zIndex: 1,
-          }}
-        >
+        <h1 className="max-w-5xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
           ENGINEERING
-          <br />
-          THE FUTURE
+          <span className="text-cyan-400"> THE FUTURE</span>
         </h1>
 
-        {/* Description */}
-        <p
-          style={{
-            maxWidth: "760px",
-            color: "#cbd5e1",
-            fontSize: "clamp(52px, 10vw, 72px)",
-            lineHeight: "1.8",
-            marginBottom: "40px",
-            zIndex: 1,
-          }}
-        >
-          Advanced fabrication systems, neon engineering, automotive
-          innovation, immersive interfaces and next-generation workshop
-          technologies built under the Neonque ecosystem.
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
+          Advanced fabrication systems, automotive innovation,
+          neon engineering concepts, immersive interfaces and
+          next-generation workshop technologies.
         </p>
 
         {/* Buttons */}
-        <div
-          style={{
-            display: "flex",
-            gap: "20px",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            marginBottom: "80px",
-            zIndex: 1,
-          }}
-        >
-          <button
-            style={{
-              padding: "16px 32px",
-              borderRadius: "14px",
-              border: "none",
-              background:
-                "linear-gradient(to right, #22d3ee, #3b82f6)",
-              color: "white",
-              fontWeight: "bold",
-              fontSize: "16px",
-              cursor: "pointer",
-              boxShadow: "0 0 30px rgba(34,211,238,0.35)",
-            }}
-          >
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
+          <button className="rounded-2xl bg-cyan-400 px-8 py-4 text-lg font-bold text-black transition hover:scale-105 hover:bg-cyan-300">
             Explore Projects
           </button>
 
-          <button
-            style={{
-              padding: "16px 32px",
-              borderRadius: "14px",
-              border: "1px solid rgba(255,255,255,0.15)",
-              background: "rgba(255,255,255,0.04)",
-              color: "white",
-              fontWeight: "bold",
-              fontSize: "16px",
-              cursor: "pointer",
-              backdropFilter: "blur(12px)",
-            }}
-          >
+          <button className="rounded-2xl border border-cyan-400/40 bg-white/5 px-8 py-4 text-lg font-semibold backdrop-blur-md transition hover:border-cyan-300 hover:bg-cyan-400/10">
             Start Build
           </button>
+
         </div>
 
-        {/* Stats Cards */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "20px",
-            width: "100%",
-            maxWidth: "900px",
-            zIndex: 1,
-          }}
-        >
-          {[
-            ["20+", "Engineering Concepts"],
-            ["Custom", "Fabrication Systems"],
-            ["Mobile", "Workshop Innovation"],
-          ].map(([title, subtitle]) => (
-            <div
-              key={title}
-              style={{
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(255,255,255,0.08)",
-                padding: "28px",
-                borderRadius: "24px",
-                backdropFilter: "blur(16px)",
-              }}
-            >
-              <h3
-                style={{
-                  fontSize: "34px",
-                  marginBottom: "10px",
-                }}
-              >
-                {title}
-              </h3>
+        {/* Bottom Stats */}
+        <div className="mt-20 grid grid-cols-1 gap-6 md:grid-cols-3">
 
-              <p
-                style={{
-                  color: "#cbd5e1",
-                }}
-              >
-                {subtitle}
-              </p>
-            </div>
-          ))}
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+            <h3 className="text-3xl font-bold text-cyan-400">20+</h3>
+            <p className="mt-2 text-gray-300">
+              Engineering Concepts
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+            <h3 className="text-3xl font-bold text-cyan-400">Custom</h3>
+            <p className="mt-2 text-gray-300">
+              Fabrication Systems
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+            <h3 className="text-3xl font-bold text-cyan-400">Mobile</h3>
+            <p className="mt-2 text-gray-300">
+              Workshop Innovation
+            </p>
+          </div>
+
         </div>
+
       </section>
     </main>
   );
