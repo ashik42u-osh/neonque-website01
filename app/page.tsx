@@ -79,7 +79,7 @@ export default function HomePage() {
           style={{
             maxWidth: "760px",
             color: "#cbd5e1",
-            fontSize: "20px",
+            fontSize: "clamp(52px, 10vw, 72px)",
             lineHeight: "1.8",
             marginBottom: "40px",
             zIndex: 1,
