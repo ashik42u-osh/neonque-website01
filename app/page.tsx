@@ -16,27 +16,33 @@ export default function Home() {
         <div className="mb-6 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-2 text-sm text-cyan-300 backdrop-blur-md">
         </div>
           PREMIUM NEON & ARCHITECTURAL SIGNAGE
-        <h1 className="max-w-5xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
+        <h1 className="max-w-7xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
           ILLUMINATING
 <span className="text-cyan-400"> BRANDS.</span>
 <br />
 ENGINEERING
 <span className="text-cyan-400"> PRESENCE.</span>
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
-          Advanced fabrication systems, automotive innovation,
-          neon engineering concepts, immersive interfaces and
-          next-generation workshop technologies.
+          Custom-crafted signage solutions designed to transform
+storefronts, interiors, and commercial spaces through
+innovative lighting, premium materials, and precision
+fabrication.
         </p>
 
-        {/* Buttons */}
+        {/* <div className="mt-8 flex flex-wrap justify-center gap-6 text-cyan-200">
+  <span>✓ Custom Neon Signs</span>
+  <span>✓ Acrylic & Metal Letters</span>
+  <span>✓ LED Backlit Signage</span>
+  <span>✓ Design • Fabrication • Installation</span>
+</div> */}
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
           <button className="rounded-2xl bg-cyan-400 px-8 py-4 text-lg font-bold text-black transition hover:scale-105 hover:bg-cyan-300">
-            Explore Projects
+            View Portfolio
           </button>
 
           <button className="rounded-2xl border border-cyan-400/40 bg-white/5 px-8 py-4 text-lg font-semibold backdrop-blur-md transition hover:border-cyan-300 hover:bg-cyan-400/10">
-            Start Build
+            Start Project
           </button>
 
         </div>
