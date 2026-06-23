@@ -14,9 +14,8 @@ export default function Home() {
       <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
 
         <div className="mb-6 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-2 text-sm text-cyan-300 backdrop-blur-md">
-          FUTURISTIC AUTOMOTIVE + FABRICATION
         </div>
-
+PREMIUM NEON & ARCHITECTURAL SIGNAGE
         <h1 className="max-w-5xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
           ENGINEERING
           <span className="text-cyan-400"> THE FUTURE</span>
